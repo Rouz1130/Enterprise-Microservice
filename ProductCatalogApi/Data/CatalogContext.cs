@@ -23,9 +23,9 @@ namespace ProductCatalogApi.Data
             builder.Entity<CatalogItem>(ConfigureCatalogItem);
         }
 
-        private void ConfigureCatalogItem(EntityTypeBuilder<CatalogItem> obj)
+        private void ConfigureCatalogItem(EntityTypeBuilder<CatalogItem> builder)
         {
-            throw new NotImplementedException();
+            builder.ToTable("Catalog");
         }
 
         private void ConfigureCatalogType(EntityTypeBuilder<CatalogType> obj)
