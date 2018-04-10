@@ -19,7 +19,7 @@ namespace ProductCatalogApi.Domain
 
         //Navigation properties
         public CatalogBrand CatalogBrand { get; set; }
-        public CatalogType Catalog { get; set; }
+        public CatalogType CatalogType { get; set; }
 
     }
 }

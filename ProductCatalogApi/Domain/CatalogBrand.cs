@@ -8,7 +8,7 @@ namespace ProductCatalogApi.Domain
     public class CatalogBrand
     {
 
-        public int id { get; set; }
+        public int Id { get; set; }
         public string Brand { get; set; }
     }
 }
