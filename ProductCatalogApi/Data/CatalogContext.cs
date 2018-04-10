@@ -57,7 +57,6 @@ namespace ProductCatalogApi.Data
             builder.Property(c => c.Type)
                 .IsRequired()
                 .HasMaxLength(100);
-
         }
 
         //.IsRequired is by default true, therefore no need to put True in parameter like I did for catalogItem Method. 
@@ -71,5 +70,9 @@ namespace ProductCatalogApi.Data
                 .IsRequired()
                 .HasMaxLength(100);
         }
+
+        public DbSet<CatalogType> CatalogTypes { get; set; }
+        public DbSet<CatalogBrand> CatalogBrands { get; set; }
+        public DbSet<CatalogItem> CatalogItems { get; set; }
     }
 }
