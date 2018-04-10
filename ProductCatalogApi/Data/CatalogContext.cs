@@ -70,7 +70,8 @@ namespace ProductCatalogApi.Data
                 .IsRequired()
                 .HasMaxLength(100);
         }
-
+        //Specialize Collection property in DbContext base class.
+        //Each Dbset of T property contains all of the LIKe Similar entities
         public DbSet<CatalogType> CatalogTypes { get; set; }
         public DbSet<CatalogBrand> CatalogBrands { get; set; }
         public DbSet<CatalogItem> CatalogItems { get; set; }
