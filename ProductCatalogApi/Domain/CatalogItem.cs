@@ -16,5 +16,10 @@ namespace ProductCatalogApi.Domain
 
         public int CatalogTypeId { get; set; }
         public int CatalogBrandId { get; set; }
+
+        //Navigation properties
+        public CatalogBrand CatalogBrand { get; set; }
+        public CatalogType Catalog { get; set; }
+
     }
 }

@@ -1,0 +1,11 @@
+C:\ShoesOnContainers\src\Services\ProductCatalogApi\bin\Debug\netcoreapp2.0\ProductCatalogApi.deps.json
+C:\ShoesOnContainers\src\Services\ProductCatalogApi\bin\Debug\netcoreapp2.0\ProductCatalogApi.runtimeconfig.json
+C:\ShoesOnContainers\src\Services\ProductCatalogApi\bin\Debug\netcoreapp2.0\ProductCatalogApi.runtimeconfig.dev.json
+C:\ShoesOnContainers\src\Services\ProductCatalogApi\bin\Debug\netcoreapp2.0\ProductCatalogApi.dll
+C:\ShoesOnContainers\src\Services\ProductCatalogApi\bin\Debug\netcoreapp2.0\ProductCatalogApi.pdb
+C:\ShoesOnContainers\src\Services\ProductCatalogApi\obj\Debug\netcoreapp2.0\ProductCatalogApi.csprojResolveAssemblyReference.cache
+C:\ShoesOnContainers\src\Services\ProductCatalogApi\obj\Debug\netcoreapp2.0\ProductCatalogApi.csproj.CoreCompileInputs.cache
+C:\ShoesOnContainers\src\Services\ProductCatalogApi\obj\Debug\netcoreapp2.0\ProductCatalogApi.AssemblyInfoInputs.cache
+C:\ShoesOnContainers\src\Services\ProductCatalogApi\obj\Debug\netcoreapp2.0\ProductCatalogApi.AssemblyInfo.cs
+C:\ShoesOnContainers\src\Services\ProductCatalogApi\obj\Debug\netcoreapp2.0\ProductCatalogApi.dll
+C:\ShoesOnContainers\src\Services\ProductCatalogApi\obj\Debug\netcoreapp2.0\ProductCatalogApi.pdb
