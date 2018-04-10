@@ -23,6 +23,10 @@ namespace ProductCatalogApi.Data
             builder.Entity<CatalogItem>(ConfigureCatalogItem);
         }
 
+
+        //Sequence HiLo: Primary key will have high and low portion. 
+        //Hight protion created from DB given to context,  Low portion created in Memory Db. 
+        //Advantages is we have the ID before we send it too the Database.
         private void ConfigureCatalogItem(EntityTypeBuilder<CatalogItem> builder)
         {
             builder.ToTable("Catalog");
@@ -42,18 +46,30 @@ namespace ProductCatalogApi.Data
             builder.HasOne(c => c.CatalogType)
                .WithMany()
                .HasForeignKey(c => c.CatalogTypeId);
+        }
 
+        private void ConfigureCatalogType(EntityTypeBuilder<CatalogType> builder)
+        {
+            builder.ToTable("CatalogType");
+            builder.Property(c => c.Id)
+                .ForSqlServerUseSequenceHiLo("Catalog_type_hilo")
+                .IsRequired();
+            builder.Property(c => c.Type)
+                .IsRequired()
+                .HasMaxLength(100);
 
         }
 
-        private void ConfigureCatalogType(EntityTypeBuilder<CatalogType> obj)
+        //.IsRequired is by default true, therefore no need to put True in parameter like I did for catalogItem Method. 
+        private void ConfigureCatalogBrand(EntityTypeBuilder<CatalogBrand> builder)
         {
-            throw new NotImplementedException();
-        }
-
-        private void ConfigureCatalogBrand(EntityTypeBuilder<CatalogBrand> obj)
-        {
-            throw new NotImplementedException();
+            builder.ToTable("CatalogBrand");
+            builder.Property(c => c.Id)
+                .ForSqlServerUseSequenceHiLo("Catalog_brand_hilo")
+                .IsRequired();
+            builder.Property(c => c.Brand)
+                .IsRequired()
+                .HasMaxLength(100);
         }
     }
 }
